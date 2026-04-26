@@ -1,0 +1,81 @@
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; color: #111; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%; height: 68px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+  }
+  .logo { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; color: #111; 
+  }
+  .logo span { color: #c0392b; }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    text-decoration: none; font-size: 14px; color: #444;
+    font-weight: 500; letter-spacing: 0.02em; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #c0392b; 
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 68px 5% 0;
+    background: #fff;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; right: 0; top: 0; bottom: 0; width: 45%;
+    background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .dots {
+    position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+    display: grid; grid-template-columns: repeat(8,1fr); gap: 10px; opacity: 0.15;
+  }
+  .dot { width: 4px; height: 4px; background: #111; border-radius: 50%; }
+
+  .hero-content { position: relative; max-width: 580px; }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #111; color: #fff;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    padding: 6px 14px; border-radius: 4px; margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+  .badge-dot { width: 6px; height: 6px; background: #c0392b; border-radius: 50%; }
+
+  h1 { font-size: clamp(38px, 5vw, 64px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: #111; margin-bottom: 6px; }
+  .subtitle { font-size: clamp(22px, 3vw, 36px); font-weight: 700; color: #333; margin-bottom: 20px; letter-spacing: -0.5px; }
+  .subtitle span { color: #c0392b; }
+  .desc { font-size: 15px; color: #666; line-height: 1.7; margin-bottom: 40px; max-width: 420px; }
+
+  .cta { display: flex; align-items: center; gap: 16px; }
+  .btn-primary {
+    background: #111; color: #fff;
+    padding: 14px 28px; border-radius: 6px;
+    font-size: 14px; font-weight: 600; cursor: pointer;
+    border: none; letter-spacing: 0.02em;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-primary:hover { background: #c0392b; transform: translateY(-1px); }
+  .btn-outline {
+    display: flex; align-items: center; gap: 10px;
+    background: transparent; color: #111;
+    font-size: 14px; font-weight: 600; cursor: pointer;
+    border: none; text-decoration: none;
+  }
+  .play-btn {
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 2px solid #111;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: #111;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover .play-btn { background: #111; color: #fff; }

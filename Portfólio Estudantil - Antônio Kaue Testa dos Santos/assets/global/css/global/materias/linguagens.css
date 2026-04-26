@@ -1,0 +1,131 @@
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; color: #111; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%; height: 68px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+  }
+  .logo { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
+  .logo span { color: #c0392b; }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { text-decoration: none; font-size: 14px; color: #444; font-weight: 500; letter-spacing: 0.02em; }
+  .nav-links a:hover, .nav-links a.active { color: #c0392b; }
+
+  .trimestre-section { padding: 110px 5% 0; max-width: 1200px; margin: 0 auto; }
+
+  .trimestre-header { text-align: center; margin-bottom: 40px; }
+  .trimestre-title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; color: #111; letter-spacing: -1.5px; margin-bottom: 14px; }
+  .trimestre-divider { width: 48px; height: 4px; background: #c0392b; border-radius: 2px; margin: 0 auto; }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding-bottom: 80px;
+    margin-top: 40px;
+  }
+
+  .work-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .work-card:hover {
+    transform: translateY(-6px);
+    border-color: #ccc;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.09);
+  }
+
+  .work-img {
+    width: 100%; height: 200px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #eee;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 10px;
+    overflow: hidden;
+  }
+  .work-img svg { opacity: 0.3; }
+  .work-img-label { font-size: 12px; color: #ccc; }
+
+  .work-body { padding: 24px 26px 28px; display: flex; flex-direction: column; flex: 1; }
+  .work-title { font-size: 20px; font-weight: 800; color: #c0392b; letter-spacing: -0.5px; margin-bottom: 14px; }
+  .work-desc { font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px; flex: 1; }
+
+  .work-skills {
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 13px; color: #444;
+  }
+  .work-skills strong { color: #111; font-weight: 700; }
+  .skill-tag {
+    display: inline-flex;
+    background: #fff0ee; color: #c0392b;
+    font-size: 12px; font-weight: 700;
+    padding: 3px 10px; border-radius: 20px;
+    margin-left: 4px; margin-top: 4px;
+    border: 1px solid #f5c6c0;
+  }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; color: #111; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%; height: 68px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+  }
+  .logo { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
+  .logo span { color: #c0392b; }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { text-decoration: none; font-size: 14px; color: #444; font-weight: 500; letter-spacing: 0.02em; }
+  .nav-links a:hover, .nav-links a.active { color: #c0392b; }
+  .trimestre-section { padding: 110px 5% 0; max-width: 1200px; margin: 0 auto; }
+  .trimestre-header { text-align: center; margin-bottom: 40px; }
+  .trimestre-title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; color: #111; letter-spacing: -1.5px; margin-bottom: 14px; }
+  .trimestre-divider { width: 48px; height: 4px; background: #c0392b; border-radius: 2px; margin: 0 auto; }
+  .works-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; padding-bottom: 80px; margin-top: 40px; }
+  .work-card { border: 1px solid #e8e8e8; border-radius: 16px; overflow: hidden; background: #fff; display: flex; flex-direction: column; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+  .work-card:hover { transform: translateY(-6px); border-color: #ccc; box-shadow: 0 16px 40px rgba(0,0,0,0.09); }
+  .work-img { width: 100%; height: 220px; overflow: hidden; border-bottom: 1px solid #eee; background: #f5f5f5; }
+  .work-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  .work-body { padding: 24px 26px 28px; display: flex; flex-direction: column; flex: 1; }
+  .work-title { font-size: 20px; font-weight: 800; color: #c0392b; letter-spacing: -0.5px; margin-bottom: 14px; }
+  .work-desc { font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px; flex: 1; }
+  .work-skills { padding-top: 16px; border-top: 1px solid #f0f0f0; font-size: 13px; color: #444; }
+  .work-skills strong { color: #111; font-weight: 700; }
+  .skill-tag { display: inline-flex; background: #fff0ee; color: #c0392b; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-left: 4px; margin-top: 4px; border: 1px solid #f5c6c0; }
+
+ .work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #c0392b;
+  text-decoration: none;
+}
+.work-link:hover {
+  text-decoration: underline;
+}
+.work-link::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c0392b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
