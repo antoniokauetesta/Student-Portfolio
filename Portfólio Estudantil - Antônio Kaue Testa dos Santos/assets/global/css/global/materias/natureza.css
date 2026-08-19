@@ -32,3 +32,10 @@ nav {
 .work-skills strong { color: #111; font-weight: 700; }
 .skill-tag { position: relative; cursor: default; display: inline-flex; background: #e8f8f5; color: #16a085; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-left: 4px; margin-top: 4px; border: 1px solid #a2d9ce; }
 .tooltip-box { position: fixed; background: #1a1a1a; color: #fff; font-size: 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 400; line-height: 1.5; padding: 8px 12px; border-radius: 8px; width: 260px; white-space: normal; z-index: 9999; pointer-events: none; }
+
+@media (max-width: 1000px) {
+  .works-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .works-grid { grid-template-columns: 1fr; }
+}

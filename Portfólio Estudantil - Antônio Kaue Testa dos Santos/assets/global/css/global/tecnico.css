@@ -1,4 +1,4 @@
- * { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; color: #111; }
 
   nav {
@@ -56,3 +56,7 @@
   .c-teal .list-dot { background: #16a085; }
   .c-blue .card-accent { background: #2980b9; }
   .c-blue .list-dot { background: #2980b9; }
+  .c-orange .card-accent { background: #e67e22; }
+  .c-orange .list-dot { background: #e67e22; }
+  .c-green .card-accent { background: #27ae60; }
+  .c-green .list-dot { background: #27ae60; }

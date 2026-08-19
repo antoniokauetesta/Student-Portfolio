@@ -1,0 +1,73 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; color: #111; }
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%; height: 68px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+.logo { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
+.logo span { color: #8e44ad; }
+.nav-links { display: flex; gap: 36px; list-style: none; }
+.nav-links a { text-decoration: none; font-size: 14px; color: #444; font-weight: 500; letter-spacing: 0.02em; }
+.nav-links a:hover, .nav-links a.active { color: #8e44ad; }
+.trimestre-section { padding: 110px 5% 0; max-width: 1400px; margin: 0 auto; }
+.trimestre-header { text-align: center; margin-bottom: 40px; }
+.trimestre-title { font-size: clamp(32px, 4vw, 48px); font-weight: 800; color: #111; letter-spacing: -1.5px; margin-bottom: 14px; }
+.trimestre-divider { width: 48px; height: 4px; background: #8e44ad; border-radius: 2px; margin: 0 auto; }
+.works-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-bottom: 80px; margin-top: 40px; align-items: stretch; }
+.work-card { border: 1px solid #e8e8e8; border-radius: 16px; overflow: hidden; background: #fff; display: flex; flex-direction: column; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.work-card:hover { transform: translateY(-6px); border-color: #ccc; box-shadow: 0 16px 40px rgba(0,0,0,0.09); }
+
+/* Imagem de topo do card: mantém enquadramento, sem esticar/perder qualidade */
+.work-img { width: 100%; height: 220px; overflow: hidden; border-bottom: 1px solid #eee; background: #f5f5f5; }
+.work-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; image-rendering: auto; display: block; }
+
+/* Moldura da foto de montagem física — SEM fundo vermelho, sem distorcer a imagem */
+.work-photo-frame {
+  background: #f5f5f5;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+.work-photo-frame img {
+  width: 100%;
+  height: auto;            /* preserva a proporção original da foto */
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+  object-fit: contain;     /* nunca corta ou estica a imagem */
+}
+
+.work-body { padding: 24px 26px 28px; display: flex; flex-direction: column; flex: 1; }
+.work-title { font-size: 20px; font-weight: 800; color: #8e44ad; letter-spacing: -0.5px; margin-bottom: 14px; }
+.work-desc { font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 16px; }
+.work-desc strong { color: #111; }
+.work-link { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #8e44ad; text-decoration: none; margin-bottom: 16px; transition: opacity 0.2s; }
+.work-link:hover { opacity: 0.75; }
+.work-code {
+  background: #1e1e1e; color: #d4d4d4; font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 12.5px; line-height: 1.7; padding: 16px 18px; border-radius: 8px;
+  margin-bottom: 16px; overflow-x: auto; white-space: pre;
+}
+.work-code .cm { color: #6a9955; }
+.work-code .kw { color: #569cd6; }
+.work-code .fn { color: #dcdcaa; }
+.work-code .nu { color: #b5cea8; }
+.work-skills { padding-top: 16px; margin-top: auto; border-top: 1px solid #f0f0f0; font-size: 13px; color: #444; }
+.work-skills strong { color: #111; font-weight: 700; }
+.skill-tag { position: relative; cursor: default; display: inline-flex; background: #f5eaf9; color: #8e44ad; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-left: 4px; margin-top: 4px; border: 1px solid #dcbce9; }
+.tooltip-box { position: fixed; background: #1a1a1a; color: #fff; font-size: 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 400; line-height: 1.5; padding: 8px 12px; border-radius: 8px; width: 260px; white-space: normal; z-index: 9999; pointer-events: none; }
+
+@media (max-width: 1000px) {
+  .works-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .works-grid { grid-template-columns: 1fr; }
+}

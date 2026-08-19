@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/global/css/global/curso-tecnico/iot.css">
+<title>Internet das Coisas — Antonio Kaue</title>
+</head>
+<body>
+<nav>
+  <div class="logo"><span>I</span>oT</div>
+  <ul class="nav-links">
+    <li><a href="/assets/global/html/global/index.html">Início</a></li>
+    <li><a href="/assets/global/html/global/sobre-mim.html">Sobre mim</a></li>
+    <li><a href="/assets/global/html/global/portfolios.html">Portfólios</a></li>
+    <li><a href="/assets/global/html/global/materias.html">Matérias</a></li>
+    <li><a href="/assets/global/html/global/tecnico.html">Técnico</a></li>
+  </ul>
+</nav>
+
+<div class="trimestre-section">
+  <div class="trimestre-header">
+    <div class="trimestre-title">Segundo Trimestre</div>
+    <div class="trimestre-divider"></div>
+  </div>
+
+  <div class="works-grid">
+
+    <!-- Acender LED -->
+    <div class="work-card">
+      <div class="work-img">
+        <img src="/assets/global/img/global/acenderled.png" alt="Acender LED">
+      </div>
+      <div class="work-body">
+        <div class="work-title">Acender LED.</div>
+        <p class="work-desc">Neste projeto, montei um circuito básico com Arduino UNO para acionar um LED. A proposta era entender na prática como conectar os componentes eletrônicos e como o Arduino controla uma saída digital. A partir dessa experiência, comecei a me familiarizar com a montagem em protoboard e com o funcionamento elétrico de um LED.</p>
+        <div class="work-photo-frame">
+          <img src="/assets/global/img/global/acenderled2.png" alt="Montagem física — Acender LED">
+        </div>
+        <p class="work-desc"><strong>Protótipo da montagem física:</strong> Utilizei uma protoboard com Arduino UNO, LED e resistor, ligando o LED a uma porta digital para permitir o acionamento.<br><br>
+        <strong>Código:</strong> Esta aplicação não exigiu um código específico.<br><br>
+        <strong>Justificativa:</strong> Esse foi meu primeiro contato prático com eletrônica e Arduino, uma base essencial antes de avançar para projetos mais complexos de Internet das Coisas.</p>
+        <div class="work-skills">
+          <strong>Habilidades Trabalhadas:</strong>
+          <span class="skill-tag" data-tooltip="Reconhecer especificações técnicas e paradigmas de IoT.">H01</span>
+          <span class="skill-tag" data-tooltip="Integrar dispositivos para coleta automática de dados.">H02</span>
+          <span class="skill-tag" data-tooltip="Integrar dispositivos de comunicação de dados.">H03</span>
+          <span class="skill-tag" data-tooltip="Reconhecer especificações de sensoriamento e parametrização.">H04</span>
+          <span class="skill-tag" data-tooltip="Integrar projeto orientado a sensoriamento e controle, parametrização.">H05</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Semáforo -->
+    <div class="work-card">
+      <div class="work-img">
+        <img src="/assets/global/img/global/semaforo.png" alt="Semáforo">
+      </div>
+      <div class="work-body">
+        <div class="work-title">Semáforo</div>
+        <p class="work-desc">Para essa atividade, montei um protótipo de semáforo com Arduino UNO e LEDs. O foco foi entender de que forma componentes eletrônicos podem ser controlados via código. Foi uma boa oportunidade para conectar a parte física da montagem com a lógica por trás de sistemas automatizados que vemos no dia a dia.</p>
+        <div class="work-photo-frame">
+          <img src="/assets/global/img/global/semaforo2.png" alt="Montagem física — Semáforo">
+        </div>
+        <p class="work-desc"><strong>Protótipo da montagem física:</strong> Usei uma protoboard com LEDs representando cada sinalização do semáforo, conectados às portas digitais do Arduino para testar o funcionamento.</p>
+        <pre class="work-code"><code><span class="cm">// controlando o pino através de uma variável</span>
+
+<span class="kw">int</span> pino = <span class="nu">10</span>;
+
+<span class="kw">void</span> <span class="fn">setup</span>() {
+    <span class="fn">pinMode</span>(pino, OUTPUT);
+}
+
+<span class="kw">void</span> <span class="fn">loop</span>() {
+    <span class="fn">digitalWrite</span>(pino, HIGH);
+}</code></pre>
+        <p class="work-desc"><strong>Justificativa:</strong> Essa atividade uniu programação e eletrônica em uma situação prática, mostrando como comandos programados são capazes de controlar automaticamente componentes eletrônicos.</p>
+        <div class="work-skills">
+          <strong>Habilidades Trabalhadas:</strong>
+          <span class="skill-tag" data-tooltip="Reconhecer especificações técnicas e paradigmas de IoT.">H01</span>
+          <span class="skill-tag" data-tooltip="Integrar dispositivos para coleta automática de dados.">H02</span>
+          <span class="skill-tag" data-tooltip="Integrar dispositivos de comunicação de dados.">H03</span>
+          <span class="skill-tag" data-tooltip="Reconhecer especificações de sensoriamento e parametrização.">H04</span>
+          <span class="skill-tag" data-tooltip="Integrar projeto orientado a sensoriamento e controle, parametrização.">H05</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controle de LED com Botão -->
+    <div class="work-card">
+      <div class="work-img">
+        <img src="/assets/global/img/global/controledeledcombotão.png" alt="Controle de LED com Botão">
+      </div>
+      <div class="work-body">
+        <div class="work-title">Controle de LED com Botão</div>
+        <p class="work-desc">Nesse projeto, montei um circuito com Arduino UNO para controlar um LED usando um botão. A ideia era explorar a relação entre entradas e saídas digitais e treinar a lógica necessária para acionar um componente eletrônico a partir de uma interação externa.</p>
+        <div class="work-photo-frame">
+          <img src="/assets/global/img/global/controledeledcombotão2.png" alt="Montagem física — Controle de LED com Botão">
+        </div>
+        <p class="work-desc"><strong>Protótipo da montagem física:</strong> A montagem contou com Arduino UNO, protoboard, LED, resistor e botão, todos conectados às portas do Arduino para os testes de acionamento do circuito.</p>
+        <pre class="work-code"><code><span class="cm">// C++ code</span>
+
+<span class="kw">void</span> <span class="fn">setup</span>() {
+    <span class="fn">pinMode</span>(LED_BUILTIN, OUTPUT);
+}
+
+<span class="kw">void</span> <span class="fn">loop</span>() {
+    <span class="fn">digitalWrite</span>(LED_BUILTIN, HIGH);
+    <span class="fn">delay</span>(<span class="nu">1000</span>);
+
+    <span class="fn">digitalWrite</span>(LED_BUILTIN, LOW);
+    <span class="fn">delay</span>(<span class="nu">1000</span>);
+}</code></pre>
+        <p class="work-desc"><strong>Justificativa:</strong> Esse desafio ajudou a fixar o entendimento sobre controle de saídas digitais e como comandos de programação definem o comportamento de um componente eletrônico.</p>
+        <div class="work-skills">
+          <strong>Habilidades Trabalhadas:</strong>
+          <span class="skill-tag" data-tooltip="Reconhecer especificações técnicas e paradigmas de IoT.">H01</span>
+          <span class="skill-tag" data-tooltip="Integrar dispositivos para coleta automática de dados.">H02</span>
+          <span class="skill-tag" data-tooltip="Integrar dispositivos de comunicação de dados.">H03</span>
+          <span class="skill-tag" data-tooltip="Reconhecer especificações de sensoriamento e parametrização.">H04</span>
+          <span class="skill-tag" data-tooltip="Integrar projeto orientado a sensoriamento e controle, parametrização.">H05</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="/assets/global/js/global/curso-tecnico/iot.js"></script>
+</body>
+</html>
